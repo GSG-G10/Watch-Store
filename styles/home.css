@@ -1,22 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* Roots*/
-:root{
-    /* Main Colors */
-    --mainColor : #1F2124;
-    --secondaryColor: #383A3F;
-    /* Font Family Hammersmith One */
-    --HammerSmith-Font: 'Hammersmith One', sans-serif;
+:root {
+  /* Main Colors */
+  --mainColor: #1f2124;
+  --secondaryColor: #383a3f;
+  /* Font Family Hammersmith One */
+  --HammerSmith-Font: "Hammersmith One", sans-serif;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  height: 5000px;
+}
+.container {
+  margin: auto;
+  width: 80%;
+}
 
+.header {
+  width: 100%;
+  height: 95vh;
+  font-family: var(--HammerSmith-Font);
+  background-image: url(../images/Home_Carousel_Desktop_3840x1700_GW_Summer21_Clear_Cut_V2.webp);
+  background-repeat: no-repeat;
 }
-body{
-    width: 100%;
+.header-main {
+  width: 100%;
+  height: 90%;
+  position: relative;
 }
-.container{
-    margin: auto;
-    width: 80%;
+.header-main-child {
+  text-align: center;
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  top: 37.5%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.header-main-child-title {
+  color: var(--mainColor);
+  font-weight: normal;
+}
+.header-main-child-title span {
+  color: #d20c02;
+}
+.header-main-child-description {
+  color: var(--secondaryColor);
+  font-size: 1.2rem;
 }
