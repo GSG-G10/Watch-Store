@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Roots*/
+:root{
+    /* Main Colors */
+    --mainColor : #1F2124;
+    --secondaryColor: #383A3F;
+    /* Font Family Hammersmith One */
+    --HammerSmith-Font: 'Hammersmith One', sans-serif;
+
+}
+body{
+    width: 100%;
+}
+.container{
+    margin: auto;
+    width: 80%;
+}
