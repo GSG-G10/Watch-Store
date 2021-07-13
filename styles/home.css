@@ -95,3 +95,64 @@ body {
   text-decoration: none;
   font-family: var(--HammerSmith-Font);
 }
+/* Main Section  */
+
+/* Filter Bar */
+.main {
+  height: 4000px;
+}
+.filter {
+  background-color: var(--mainColor);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+.filter-input {
+  /* border: 1px solid var(--whiteColor); */
+  height: 4vh;
+  /* border: 1px solid var(--whiteColor); */
+  width: 20%;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  overflow: hidden;
+}
+.filter-input input {
+  width: 85%;
+  height: 100%;
+  padding-left: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--whiteColor);
+  color: var(--whiteColor);
+}
+.filter-input-search-setting {
+  background-color: var(--secondaryColor);
+}
+.filter-input-search-btn {
+  background-color: var(--thirdColor);
+}
+.filter-input-search-setting,
+.filter-input-search-btn {
+  color: white;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.filter .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.filter-choose-view {
+  width: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.filter-choose-view i {
+  color: var(--whiteColor);
+}
