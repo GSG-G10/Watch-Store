@@ -1,8 +1,184 @@
-/* product card style*/
-.container {
-  margin: 50px;
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* Roots*/
+
+:root {
+  /* Main Colors */
+  --mainColor: #1f2124;
+  --secondaryColor: #383a3f;
+  --thirdColor: #d20c02;
+  --whiteColor: #ffffff;
+  /* Font Family Hammersmith One */
+  --HammerSmith-Font: "Hammersmith One", sans-serif;
+}
+
+body {
+  width: 100%;
+}
+
+.container {
+  margin: auto;
+  width: 70%;
+}
+
+.header {
+  width: 100%;
+  height: 90vh;
+  font-family: var(--HammerSmith-Font);
+  background-image: url(../images/Home_Carousel_Desktop_3840x1700_GW_Summer21_Clear_Cut_V2.webp);
+  background-repeat: no-repeat;
+}
+
+.header-main {
+  width: 100%;
+  height: 90%;
+  position: relative;
+}
+
+.header-main-child {
+  text-align: center;
+  width: 25%;
+  height: 20%;
+  position: absolute;
+  top: 37.5%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-main-child-title {
+  color: var(--mainColor);
+  font-weight: normal;
+}
+
+.header-main-child-title span {
+  color: #d20c02;
+}
+
+.header-main-child-description {
+  color: var(--secondaryColor);
+  font-size: 1.2rem;
+}
+
+.header-nav {
+  background-color: var(--mainColor);
+  color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 80%;
+  padding: 15px 100px;
+  top: 0px;
+  z-index: 15;
+}
+
+.header-nav-anchor {
+  width: 50%;
+  height: 100%;
+}
+
+.header-nav-logo {
+  width: 22%;
+  height: 100%;
+}
+
+.header-nav-btns {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 100%;
+  align-items: center;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--HammerSmith-Font);
+}
+
+/* Main Section  */
+
+/* Filter Bar */
+
+.main {
+  height: 4000px;
+}
+
+.filter {
+  background-color: var(--mainColor);
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.filter-input {
+  /* border: 1px solid var(--whiteColor); */
+  height: 4vh;
+  /* border: 1px solid var(--whiteColor); */
+  width: 20%;
+  display: flex;
+  align-items: center;
+  border-radius: 0px 20px 20px 0px;
+  overflow: hidden;
+}
+
+.filter-input input {
+  width: 85%;
+  height: 100%;
+  padding-left: 1rem;
+  outline: none;
+  border: none;
+  background-color: var(--whiteColor);
+  color: var(--whiteColor);
+}
+
+.filter-input-search-setting {
+  background-color: var(--secondaryColor);
+}
+
+.filter-input-search-btn {
+  background-color: var(--thirdColor);
+}
+
+.filter-input-search-setting,
+.filter-input-search-btn {
+  color: white;
+  width: 15%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.filter .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-choose-view {
+  width: 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.filter-choose-view i {
+  color: var(--whiteColor);
+}
+/* product card style*/
+.product-body {
+  margin-top: 5%;
+}
 .products {
   display: flex;
   flex-wrap: wrap row;
@@ -21,7 +197,7 @@
   display: flex;
   flex-direction: column;
   border-radius: 15px;
-  height: 500px;
+  height: 445px;
 }
 .product1 .product-content .card-image {
   width: 100%;
@@ -58,60 +234,4 @@
 .product1 .product-content .add-cart:hover {
   background-color: #ddd;
   color: #000;
-}
-/* footer style*/
-.footer {
-  display: flex;
-
-  width: 80%;
-  justify-content: space-between;
-  bottom: 0;
-  height: 150px;
-  position: fixed;
-  bottom: 0;
-  margin-left: 7%;
-}
-.footer .footer-image {
-  width: 50%;
-  height: 30vh;
-}
-.image-footer .header-logo {
-  padding-top: 60px;
-}
-.footer-button {
-  width: 50%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-content: center;
-}
-.footer-button .footer-list {
-  width: 130px;
-  background-color: black;
-  color: #fff;
-  text-align: center;
-  padding-top: 12px;
-  padding-bottom: 12px;
-  border-radius: 25px;
-  border: none;
-  margin-top: 15%;
-  height: 25px;
-  cursor: pointer;
-}
-@media (max-width: 900px) {
-  .image-footer {
-    width: 50%;
-  }
-  .footer-button {
-    width: 50%;
-  }
-  .footer-button .footer-list {
-    background-color: black;
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 25px;
-    border: none;
-    height: 50px;
-    cursor: pointer;
-  }
 }
