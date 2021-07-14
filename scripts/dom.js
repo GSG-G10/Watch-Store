@@ -1,3 +1,5 @@
+const addProductButton = document.getElementById("AddProductBtn");
+const ProductsContainer = document.getElementsByClassName("products");
 const openForm = () => {
   document.getElementById("myForm").style.display = "block";
 };
@@ -18,7 +20,7 @@ const getProductURL = () => {
 const getProductPrice = () => {
   return document.getElementById("productPrice").value;
 };
+
 //Go to productDetail function in the logic.js
-const AddProductBtn = document
-  .getElementById("AddProductBtn")
-  .addEventListener("click", ProductDetail);
+const AddProductBtn = addProductButton.addEventListener("click", ProductDetail);
+JSON.parse(localStorage.getItem(productStored[productStored.length -1].ID))
