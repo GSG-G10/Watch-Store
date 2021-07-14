@@ -29,8 +29,37 @@
             </nav>
         </div>
     </header>
+    
     <button class="AddProduct-btn" onclick="openForm()">Add product !</button>
-
+    <div class="container">
+        <h1 class="table-title">Product list</h1>
+        <table id="ProTable">
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td id="ProductIDField"></td>
+                    <td id="ProductNameField"></td>
+                    <td id="ProductImgField"></td>
+                    <td id="ProductPriceField"></td>
+                    <td>
+                        <a class="openEdit"><i class="fa fa-pencil" aria-hidden="true"></i
+              ></a>
+                    </td>
+                    <td>
+                        <a class="DeleteButton"><i class="fa fa-trash" aria-hidden="true"></i
+              ></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
     <div class="form-popup" id="myForm">
         <form class="form-container">
             <h1>Product Details</h1>
