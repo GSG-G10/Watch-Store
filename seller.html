@@ -1,58 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seller</title>
     <!--Font Awesome here  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <!-- Set favicon Image -->
     <link rel="icon" type="image/png" href="./images/favicon.ico" />
     <!-- style Css -->
     <link rel="stylesheet" href="./styles/seller.css" />
-  </head>
+</head>
 
-  <body>
+<body>
     <header class="header">
-      <div class="container">
-        <nav class="header-nav">
-          <a href="/index.html" class="header-nav-anchor">
-            <h1>Watch Your Watch</h1>
-          </a>
-          <div class="header-nav-btns">
-            <a href="/index.html" class="BecomeSeller">Home</a>
-            <a href="/cart.html" class="cart"
-              ><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+        <div class="container">
+            <nav class="header-nav">
+                <a href="/index.html" class="header-nav-anchor">
+                    <h1>Watch Your Watch</h1>
+                </a>
+                <div class="header-nav-btns">
+                    <a href="/index.html" class="BecomeSeller">Home</a>
+                    <a href="/cart.html" class="cart"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
             </a>
-          </div>
-        </nav>
-      </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <button class="AddProduct-btn" onclick="openForm()">Add product !</button>
 
     <div class="form-popup" id="myForm">
-      <form class="form-container">
-        <h1>Product Details</h1>
-        <label><b>Name</b></label>
-        <input type="text" placeholder="Enter Product Name" required />
-        <label><b>ID</b></label>
-        <input type="number" placeholder="Enter Product ID" required />
-        <label><b>Image</b></label>
-        <input type="url" placeholder="Enter Product Image URL" required />
-        <label><b>Price</b></label>
-        <input type="number" placeholder="Enter Product Prise" required />
-        <button type="button" class="btn" onclick="closeForm()">
+        <form class="form-container">
+            <h1>Product Details</h1>
+            <label><b>Name</b></label>
+            <input type="text" placeholder="Enter Product Name" required />
+            <label><b>ID</b></label>
+            <input type="number" placeholder="Enter Product ID" required />
+            <label><b>Image</b></label>
+            <input type="url" placeholder="Enter Product Image URL" required />
+            <label><b>Price</b></label>
+            <input type="number" placeholder="Enter Product Prise" required />
+            <button type="button" class="btn" onclick="closeForm()">
           Add Product
         </button>
-        <button type="button" class="btn cancel" onclick="closeForm()">
+            <button type="button" class="btn cancel" onclick="closeForm()">
           Close
         </button>
-      </form>
+        </form>
     </div>
+    <footer class="footer">
+        <div class="image-footer">
+            <h1 class="header-logo">WATCH YOUR WATCH</h1>
+        </div>
+        <div class="footer-button">
+            <a class="footer-list">Contact Us</a>
+            <a class="footer-list">About Us</a>
+            <a class="footer-list">Join Us</a>
+        </div>
+    </footer>
     <script src="/scripts/dom.js"></script>
-  </body>
+</body>
+
 </html>
