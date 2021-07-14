@@ -1,22 +1,75 @@
-@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 /* Roots*/
-:root{
-    /* Main Colors */
-    --mainColor : #1F2124;
-    --secondaryColor: #383A3F;
-    /* Font Family Hammersmith One */
-    --HammerSmith-Font: 'Hammersmith One', sans-serif;
-
+:root {
+  /* Main Colors */
+  --mainColor: #1f2124;
+  --secondaryColor: #383a3f;
+  /* Font Family Hammersmith One */
+  --HammerSmith-Font: "Hammersmith One", sans-serif;
 }
-body{
-    width: 100%;
+body {
+  width: 100%;
 }
-.container{
-    margin: auto;
-    width: 80%;
+.container {
+  margin: auto;
+  width: 80%;
+}
+.table-of-cart {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.product-headers {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgray;
+  margin: 0 auto;
+}
+.product-title {
+  width: 45%;
+}
+.product-prices {
+  width: 15%;
+  border-bottom: 4px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.product-quatity {
+  width: 30%;
+  border-bottom: 4px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+.product-total {
+  width: 10%;
+  border-bottom: 4px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+.allProduct {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+.TotalPrice {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+.basketTotalTitle {
+  width: 30%;
+}
+.basketTotal {
+  width: 10%;
 }
