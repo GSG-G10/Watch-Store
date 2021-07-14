@@ -69,6 +69,7 @@ body {
 }
 
 .AddProduct-btn {
+    font-family: var(--HammerSmith-Font);
     background-color: rgb(0, 0, 0);
     color: white;
     padding: 16px 20px;
@@ -76,8 +77,8 @@ body {
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
-    top: 50%;
-    left: 10%;
+    top: 20%;
+    left: 20%;
     width: 280px;
     border-radius: 10px;
     box-shadow: 5px 5px #adacac;
@@ -129,13 +130,19 @@ h1 {
     font-family: var(--HammerSmith-Font);
 }
 
+#logo2 {
+    position: left;
+    width: 50%;
+    height: 20%;
+}
+
 .form-container .btn {
     background-color: #04aa6d;
     color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
-    width: 60%;
+    width: 48%;
     opacity: 0.8;
     border-radius: 10px;
     font-family: var(--HammerSmith-Font);
@@ -148,6 +155,36 @@ h1 {
 .form-container .btn:hover,
 .open-button:hover {
     opacity: 1;
+}
+
+.form-buttons {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+
+/* Table  */
+
+.table-title {
+    font-weight: 500;
+    margin-bottom: 3vh;
+}
+
+.table {
+    max-width: 50%;
+    font-family: var(--HammerSmith-Font);
+    border-collapse: collapse;
+    font-weight: lighter;
+}
+
+td,
+th {
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 @media screen and (max-width: 780px) {
