@@ -1,33 +1,26 @@
-const IDfiled = document.getElementById("ProductIDField");
-const Namefiled = document.getElementById("ProductNameField");
-const IMGfiled = document.getElementById("ProductImgField");
-const PRICEfiled = document.getElementById("ProductPriceField");
-const DetailsID = document.getElementById("productID");
-const DetailsName = document.getElementById("productName");
-const DetailsIMG = document.getElementById("productURL");
-const DetailsPRICE = document.getElementById("productPrice");
-const myTable = document.getElementById("ProTable");
-
+const addProductButton = document.getElementById("AddProductBtn");
+const ProductsContainer = document.getElementsByClassName("products");
 const openForm = () => {
-    document.getElementById("myForm").style.display = "block";
+  document.getElementById("myForm").style.display = "block";
 };
 
 const closeForm = () => {
-    document.getElementById("myForm").style.display = "none";
+  document.getElementById("myForm").style.display = "none";
 };
 //---------------------Product properities------------------
 const getProductName = () => {
-    return DetailsName.value;
+  return document.getElementById("productName").value;
 };
 const getProductID = () => {
-    return IDfiled.value;
+  return document.getElementById("productID").value;
 };
 const getProductURL = () => {
-    return IMGfiled.value;
+  return document.getElementById("productURL").value;
 };
 const getProductPrice = () => {
-    return PRICEfiled.value;
+  return document.getElementById("productPrice").value;
 };
+
 //Go to productDetail function in the logic.js
 
 let products=[
