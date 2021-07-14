@@ -32,3 +32,6 @@ const getProductPrice = () => {
 const AddProductBtn = document
     .getElementById("AddProductBtn")
     .addEventListener("click", ProductDetail);
+document.getElementById("DeleteButton").addEventListener("click", () => {
+    alert("  البضاعة المباعة لا ترد ولا تستبدل");
+});
