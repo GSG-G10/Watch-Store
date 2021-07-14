@@ -1,29 +1,37 @@
+const IDfiled = document.getElementById("ProductIDField");
+const Namefiled = document.getElementById("ProductNameField");
+const IMGfiled = document.getElementById("ProductImgField");
+const PRICEfiled = document.getElementById("ProductPriceField");
+const DetailsID = document.getElementById("productID");
+const DetailsName = document.getElementById("productName");
+const DetailsIMG = document.getElementById("productURL");
+const DetailsPRICE = document.getElementById("productPrice");
+const myTable = document.getElementById("ProTable");
+
 const openForm = () => {
-  document.getElementById("myForm").style.display = "block";
+    document.getElementById("myForm").style.display = "block";
 };
 
 const closeForm = () => {
     document.getElementById("myForm").style.display = "none";
-}
-  document.getElementById("myForm").style.display = "none";
 };
 //---------------------Product properities------------------
 const getProductName = () => {
-  return document.getElementById("productName").value;
+    return DetailsName.value;
 };
 const getProductID = () => {
-  return document.getElementById("productID").value;
+    return IDfiled.value;
 };
 const getProductURL = () => {
-  return document.getElementById("productURL").value;
+    return IMGfiled.value;
 };
 const getProductPrice = () => {
-  return document.getElementById("productPrice").value;
+    return PRICEfiled.value;
 };
 //Go to productDetail function in the logic.js
-const AddProductBtn = document
-  .getElementById("AddProductBtn")
-  .addEventListener("click", ProductDetail);
+/*const AddProductBtn = document
+    .getElementById("AddProductBtn")
+    .addEventListener("click", ProductDetail);
 
   /* add to cart function */
 
@@ -52,15 +60,11 @@ let products=[
         inCart:0
     },
 ];
-let carts = document.querySelectorAll('.add-cart')
-let cartLogo = document.querySelector('.cart')
-let productHeader =document.querySelector('.product-header')
-cartLogo.addEventListener('click',()=>{
-    console.log("rawand")
-    productHeader.classList.add("show");
-})
+const carts = document.querySelectorAll('.add-cart')
+
 for(let i =0 ; i< carts.length ; i++){
     carts[i].addEventListener('click',()=>{
+        console.log("h")
         cartNumbers(products[i]);
         totalCost(products[i])
     })
