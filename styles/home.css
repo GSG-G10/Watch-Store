@@ -287,21 +287,18 @@ body {
     display: flex;
 
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .products2 {
     display: flex;
-
+    margin-top: 2%;
     flex-direction: column;
     justify-content: space-around;
   }
   .product1 {
     width: 100%;
   }
-  .product1 .product-content {
-    display: flex;
-    flex-direction: column;
-  }
+
   .footer-button {
     width: 50%;
   }
