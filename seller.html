@@ -42,13 +42,44 @@
             <input type="url" placeholder="Enter Product Image URL" required />
             <label><b>Price</b></label>
             <input type="number" placeholder="Enter Product Prise" required />
-            <button type="button" class="btn" onclick="closeForm()">
-          Add Product
-        </button>
-            <button type="button" class="btn cancel" onclick="closeForm()">
-          Close
-        </button>
+            <div class="form-buttons">
+                <button type="button" class="btn" onclick="closeForm()">
+            Add Product
+          </button>
+                <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+            </div>
         </form>
+    </div>
+    <div class="container">
+        <h1 class="table-title">Product list</h1>
+        <table id="ProTable">
+            <tbody>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Image</th>
+                    <th>Price</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td id="ProductIDField"></td>
+                    <td id="ProductNameField"></td>
+                    <td id="ProductImgField"></td>
+                    <td id="ProductPriceField"></td>
+                    <td>
+                        <a class="openEdit"><i class="fa fa-pencil" aria-hidden="true"></i
+              ></a>
+                    </td>
+                    <td>
+                        <a class="DeleteButton"><i class="fa fa-trash" aria-hidden="true"></i
+              ></a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </div>
     <footer class="footer">
         <div class="image-footer">
@@ -60,6 +91,7 @@
             <a class="footer-list">Join Us</a>
         </div>
     </footer>
+    <script src="/scripts/logic.js"></script>
     <script src="/scripts/dom.js"></script>
 </body>
 
