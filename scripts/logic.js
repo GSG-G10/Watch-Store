@@ -7,11 +7,13 @@ const ProductDetail = () => {
     price: getProductPrice(),
   };
   localStorage.setItem(productObj.ID, JSON.stringify(productObj));
-  localKeys()
-  console.log("array of keys :", localKeys())
+  localKeys();
 };
+// Set Local Storage Keys In Array
+const localKeys = () => Object.keys(localStorage);
 
-const localKeys = () =>{
-    const keys = Object.keys(localStorage);
-    return keys
-}
+// Mapping And Create new Array Of Object
+const productStored = localKeys().map((e) => {
+  const elementObj = localStorage.getItem(parseInt(e));
+  return JSON.parse(elementObj);
+});
