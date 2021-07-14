@@ -29,11 +29,6 @@ const getProductPrice = () => {
     return PRICEfiled.value;
 };
 //Go to productDetail function in the logic.js
-/*const AddProductBtn = document
-    .getElementById("AddProductBtn")
-    .addEventListener("click", ProductDetail);
-
-  /* add to cart function */
 
 let products=[
     {
@@ -64,20 +59,18 @@ const carts = document.querySelectorAll('.add-cart')
 
 for(let i =0 ; i< carts.length ; i++){
     carts[i].addEventListener('click',()=>{
-        console.log("h")
+    
         cartNumbers(products[i]);
         totalCost(products[i])
     })
 }
-function onLoadCartNumber(){
-    //every time we reload the page will call this function,wil get the element in localstorge
-    //and will put it in cart ,this process will store the number in cart wvery time we reload the page or close it
+const onLoadCartNumber=()=>{
     let productNumber = localStorage.getItem('cartNumber')
     if(productNumber){
         document.querySelector('.cart span').textContent = productNumber
     }
 }
-function cartNumbers(product){
+const cartNumbers=(product)=>{
     console.log('this the product',product)
     let productNumber = localStorage.getItem('cartNumber')
     productNumber = parseInt(productNumber)
@@ -92,7 +85,7 @@ function cartNumbers(product){
 }
 
 
-function setItems (product){
+const setItems= (product)=>{
     let cartItems=localStorage.getItem('productsInCart');
     cartItems = JSON.parse(cartItems);
     if(cartItems != null){
@@ -114,7 +107,7 @@ function setItems (product){
     
 
 }
- function totalCost(product){
+const totalCost=(product)=>{
      console.log("the price is",product.price)
      let cardCost=localStorage.getItem('totalCost');
     
@@ -125,7 +118,7 @@ function setItems (product){
          localStorage.setItem("totalCost",product.price);
      }
  }
-function displayCart(){
+const displayCart=()=>{
     let cartItems = localStorage.getItem('productsInCart');
     cartItems=JSON.parse(cartItems);
     let productConatiner = document.querySelector('.allProduct')
@@ -153,3 +146,10 @@ function displayCart(){
 }
 onLoadCartNumber();
 displayCart();
+
+const AddProductBtn = document
+    .getElementById("AddProductBtn")
+    .addEventListener("click", ProductDetail);
+document.getElementById("DeleteButton").addEventListener("click", () => {
+    alert("  البضاعة المباعة لا ترد ولا تستبدل");
+});
