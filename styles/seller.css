@@ -76,7 +76,7 @@ body {
     cursor: pointer;
     opacity: 0.8;
     position: fixed;
-    top: 50%;
+    top: 40%;
     left: 10%;
     width: 280px;
     border-radius: 10px;
@@ -148,6 +148,41 @@ h1 {
 .form-container .btn:hover,
 .open-button:hover {
     opacity: 1;
+}
+
+.form-buttons {
+    width: 100%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+#openEdit,
+#DeleteButton {
+    cursor: pointer;
+}
+
+
+/* Table  */
+
+.table-title {
+    font-weight: 500;
+    margin-bottom: 3vh;
+}
+
+#ProTable {
+    max-width: 50%;
+    font-family: var(--HammerSmith-Font);
+    border-collapse: collapse;
+    font-weight: lighter;
+}
+
+td,
+th {
+    border: 2px solid #dddddd;
+    text-align: center;
+    padding: 0.5rem;
 }
 
 @media screen and (max-width: 780px) {
