@@ -1,4 +1,3 @@
-//Add the productDetail into the local storage.
 const ProductDetail = () => {
     let productObj = {
         name: getProductName(),
@@ -17,3 +16,4 @@ const productStored = localKeys().map((e) => {
     const elementObj = localStorage.getItem(parseInt(e));
     return JSON.parse(elementObj);
 });
+
