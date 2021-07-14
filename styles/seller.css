@@ -173,7 +173,7 @@ h1 {
     margin-bottom: 3vh;
 }
 
-.table {
+#ProTable {
     max-width: 50%;
     font-family: var(--HammerSmith-Font);
     border-collapse: collapse;
