@@ -1,98 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Seller</title>
     <!--Font Awesome here  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- Set favicon Image -->
     <link rel="icon" type="image/png" href="./images/favicon.ico" />
     <!-- style Css -->
     <link rel="stylesheet" href="./styles/seller.css" />
-</head>
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container">
-            <nav class="header-nav">
-                <a href="/index.html" class="header-nav-anchor">
-                    <h1>Watch Your Watch</h1>
-                </a>
-                <div class="header-nav-btns">
-                    <a href="/index.html" class="BecomeSeller">Home</a>
-                    <a href="/cart.html" class="cart"><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
+      <div class="container">
+        <nav class="header-nav">
+          <a href="/index.html" class="header-nav-anchor">
+            <h1>Watch Your Watch</h1>
+          </a>
+          <div class="header-nav-btns">
+            <a href="/index.html" class="BecomeSeller">Home</a>
+            <a href="/cart.html" class="cart"
+              ><i class="fa fa-shopping-cart fa-2x" aria-hidden="true"></i>
             </a>
-                </div>
-            </nav>
-        </div>
+          </div>
+        </nav>
+      </div>
     </header>
     <button class="AddProduct-btn" onclick="openForm()">Add product !</button>
 
     <div class="form-popup" id="myForm">
-        <form class="form-container">
-            <h1>Product Details</h1>
-            <label><b>Name</b></label>
-            <input type="text" placeholder="Enter Product Name" required />
-            <label><b>ID</b></label>
-            <input type="number" placeholder="Enter Product ID" required />
-            <label><b>Image</b></label>
-            <input type="url" placeholder="Enter Product Image URL" required />
-            <label><b>Price</b></label>
-            <input type="number" placeholder="Enter Product Prise" required />
-            <div class="form-buttons">
-                <button type="button" class="btn" onclick="closeForm()">
-            Add Product
-          </button>
-                <button type="button" class="btn cancel" onclick="closeForm()">
-            Close
-          </button>
-            </div>
-        </form>
-    </div>
-    <div class="container">
-        <h1 class="table-title">Product list</h1>
-        <table id="ProTable">
-            <tbody>
-                <tr>
-                    <th>ID</th>
-                    <th>Name</th>
-                    <th>Image</th>
-                    <th>Price</th>
-                    <th>Edit</th>
-                    <th>Delete</th>
-                </tr>
-                <tr>
-                    <td id="ProductIDField"></td>
-                    <td id="ProductNameField"></td>
-                    <td id="ProductImgField"></td>
-                    <td id="ProductPriceField"></td>
-                    <td>
-                        <a class="openEdit"><i class="fa fa-pencil" aria-hidden="true"></i
-              ></a>
-                    </td>
-                    <td>
-                        <a class="DeleteButton"><i class="fa fa-trash" aria-hidden="true"></i
-              ></a>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+      <form class="form-container">
+        <h1>Product Details</h1>
+        <label><b>Name</b></label>
+        <input
+          id="productName"
+          type="text"
+          placeholder="Enter Product Name"
+          required
+        />
+        <label><b>ID</b></label>
+        <input
+          id="productID"
+          type="number"
+          placeholder="Enter Product ID"
+          required
+        />
+        <label><b>Image</b></label>
+        <input
+          id="productURL"
+          type="url"
+          placeholder="Enter Product Image URL"
+          required
+        />
+        <label><b>Price</b></label>
+        <input
+          id="productPrice"
+          type="number"
+          placeholder="Enter Product Prise"
+          required
+        />
+        <button id="AddProductBtn" type="button" class="btn">
+          Add Product
+        </button>
+        <button type="button" class="btn cancel" onclick="closeForm()">
+          Close
+        </button>
+      </form>
     </div>
     <footer class="footer">
-        <div class="image-footer">
-            <h1 class="header-logo">WATCH YOUR WATCH</h1>
-        </div>
-        <div class="footer-button">
-            <a class="footer-list">Contact Us</a>
-            <a class="footer-list">About Us</a>
-            <a class="footer-list">Join Us</a>
-        </div>
+      <div class="image-footer">
+        <h1 class="header-logo">WATCH YOUR WATCH</h1>
+      </div>
+      <div class="footer-button">
+        <a class="footer-list">Contact Us</a>
+        <a class="footer-list">About Us</a>
+        <a class="footer-list">Join Us</a>
+      </div>
     </footer>
-    <script src="/scripts/logic.js"></script>
+    <script src="./scripts/logic.js"></script>
     <script src="/scripts/dom.js"></script>
-</body>
-
+  </body>
 </html>
