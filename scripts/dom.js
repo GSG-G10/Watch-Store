@@ -1,5 +1,5 @@
 const addProductButton = document.getElementById("AddProductBtn");
-const ProductsContainer = document.getElementsByClassName("products");
+// const ProductsContainer = document.getElementsByClassName("products");
 const openForm = () => {
   document.getElementById("myForm").style.display = "block";
 };
@@ -111,8 +111,12 @@ const totalCost=(product)=>{
          localStorage.setItem("totalCost",product.price);
      }
  }
+ const AddProductBtn = document
+    .getElementById("AddProductBtn")
+    .addEventListener("click", ProductDetail);
 const displayCart=()=>{
-    let cartItems = localStorage.getItem('productsInCart');
+    let cartItems = "";
+    cartItems = localStorage.getItem('productsInCart');
     cartItems=JSON.parse(cartItems);
     let productConatiner = document.querySelector('.allProduct')
     let cartCost = localStorage.getItem('totalCost');
@@ -140,9 +144,7 @@ const displayCart=()=>{
 onLoadCartNumber();
 displayCart();
 
-const AddProductBtn = document
-    .getElementById("AddProductBtn")
-    .addEventListener("click", ProductDetail);
+
 document.getElementById("DeleteButton").addEventListener("click", () => {
     alert("  البضاعة المباعة لا ترد ولا تستبدل");
 });
