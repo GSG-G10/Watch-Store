@@ -85,9 +85,9 @@ body {
   height: 100%;
 }
 
-.header-nav-logo {
-  width: 22%;
-  height: 100%;
+.header-logo span {
+  color: var(--thirdColor);
+  margin-right:0.5rem ;
 }
 
 .header-nav-btns {
